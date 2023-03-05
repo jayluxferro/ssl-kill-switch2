@@ -1,6 +1,9 @@
+THEOS_DEVICE_IP = 127.0.0.1
+THEOS_DEVICE_PORT = 2222
+FINALPACKAGE = 1
 ARCHS := arm64 arm64e
 
-include theos/makefiles/common.mk
+include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = SSLKillSwitch2
 SSLKillSwitch2_FILES = SSLKillSwitch/SSLKillSwitch.m
